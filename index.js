@@ -5,7 +5,7 @@ var path = require('path');
 var globby = require('globby');
 var dimensions = require('parse-image-dimensions');
 
-var filepathRegex = '(?:\\([ ]*)*(?:\'|\"|\\(|\\s)((?!\\s)[ a-z0-9_@\\-\\/\\.]{2,}\\.';
+var filepathRegex = '([a-z\-_0-9\/\:\.]*\.';
 
 
 module.exports = function responsiveConfig(patterns, opts) {
